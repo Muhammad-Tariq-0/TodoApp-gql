@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin');
+ .app{
+    text-align: center;
+    }
+
+   h1{
+    font-family: Aladin; 
+   }
+
+   /* -------------------Loader Section------------------------ */
+
+   .loader{
+       display: block;
+       margin: auto;
+   }
+   @media (min-width:331px) and (max-width:400px){
+       .loader{
+           width: 400px;
+           height: 300px;
+           margin-top: 100px;
+           margin-left: -22px;
+       }
+   }
+   @media (max-width:330px){
+    .loader{
+        width: 400px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: -40px;
+    }
+}
+/* ------------------Todo Section---------------------------- */
+
+    #todos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .todo{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(227, 236, 236);
+        border-radius: 4px;
+        height: 50px;
+        border-left:4px solid green;
+        border-right:4px solid red;
+        width: 50%;
+    }
+    li{
+        padding: 15px;
+    }
+    
+    @media (max-width:530px){
+        .todo{ 
+            min-width: 256px;
+            font-size: 12px;
+        }  
+    
+    }
+
+/* ------------------input Section---------------------------- */
+
+    input[type=text]{
+        width: 50vh;
+        height: 45px;
+       border-top-left-radius: 10px;
+       border-bottom-left-radius: 10px;
+        margin-top: auto;
+        border: rgb(99, 216, 200) 1px solid;
+        margin-top: 20px;
+        margin: auto;
+        box-shadow: 0 12px 10px yellowgreen ;
+      }
+
+      @media (max-width:450px){
+        input[type=text]{ 
+            width: 200px;
+        } 
+    } 
+
+
+/* ------------------Delete Section---------------------------- */
+    
+.deleteButton {
+	color: rgb(68, 49, 49);
+	text-decoration: none;
+	background: #cacaca;
+  text-align: center;
+	display: inline-block;
+	border: none;
+    transition: all 0.4s ease 0s;
+    height: 25px;
+    border-radius: 10px;
+	}
+.deleteButton:hover {
+	background: #434343;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+    cursor: pointer;
+    color:white;
+    }
+
+ 
+    .addButton {
+        text-decoration: none;
+        background: #82c543;
+        text-align: center;
+        display: inline-block;
+        border: none;
+        transition: all 0.4s ease 0s;
+        height: 49px;
+        border-top-right-radius: 10px;
+       border-bottom-right-radius: 10px;
+       box-shadow: 0 12px 10px yellowgreen ;
+        }
+    .addButton:hover {
+        background: #434343;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        color: white;
+        }   
+
+
+    
